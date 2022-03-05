@@ -13,10 +13,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {rel:"stylesheet",href:"https://fonts.googleapis.com/icon?family=Material+Icons"}
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons" }
     ],
-    script:[
-      {src:"https://cdn.jsdelivr.net/npm/marked/marked.min.js"}
+    script: [
+      { src: "https://cdn.jsdelivr.net/npm/marked/marked.min.js" }
     ]
   },
 
@@ -32,7 +32,10 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -40,5 +43,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  googleAnalytics: {
+    id: 'G-3R5GVG2SJG'
   }
 }
