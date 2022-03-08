@@ -16,7 +16,9 @@ export default {
       { rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons" }
     ],
     script: [
-      { src: "https://cdn.jsdelivr.net/npm/marked/marked.min.js" }
+      { src: "https://cdn.jsdelivr.net/npm/marked/marked.min.js" },
+      {src:"https://www.googletagmanager.com/gtag/js?id=G-3R5GVG2SJG"},
+      {src:"/script.js"}
     ]
   },
 
@@ -33,8 +35,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,7 +45,4 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  googleAnalytics: {
-    id: 'G-3R5GVG2SJG'
-  }
 }
